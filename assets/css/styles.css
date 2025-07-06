@@ -376,6 +376,28 @@ top: 50px;
   cursor: pointer;
   margin-left: auto;
 }
+.contact__info a {
+  color: var(--first-color);
+  font-weight: var(--font-semi);
+}
+.contact__message {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+.contact__message--success {
+  display: block;
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #27ae60;
+}
+.contact__message--error {
+  display: block;
+  background-color: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
 
 /* ===== FOOTER =====*/
 .footer {

@@ -41,7 +41,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Prem Sagar</span><br> Full stack Designer</h1>
 
-                    <a href="#" class="button">Contact</a>
+                    <a href="#contact" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
@@ -174,11 +174,12 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form action="javascript:void(0)" class="contact__form" id="contact-form" onsubmit="return sendEmail();">
+                        <input type="text" placeholder="Name" class="contact__input" id="contact-name" required>
+                        <input type="email" placeholder="Email" class="contact__input" id="contact-email" required>
+                        <textarea name="message" id="contact-message" cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
+                        <div id="contact-feedback" class="contact__message"></div>
+                        <button type="submit" class="contact__button button">Send</button>
                     </form>
                 </div>
             </section>
